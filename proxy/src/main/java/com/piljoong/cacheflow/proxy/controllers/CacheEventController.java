@@ -35,6 +35,8 @@ public class CacheEventController {
         logger.info("{}/{}", cv.getId(), cv.getValue());
 
         events.push(cv);
+
+        // Appending "_NEW" is intended for local demo
         memcachedManager.set(cv.getId()+"_NEW", cv.getValue());
 
         return new ResponseMessage(0, "ACK");

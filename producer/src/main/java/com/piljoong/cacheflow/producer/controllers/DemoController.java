@@ -63,8 +63,6 @@ public class DemoController {
     @CrossOrigin(origins = "*")
     @GetMapping(path="/recent")
     private ResponseEntity<Stack<CacheEvent>> fetchRecentUpdatedCacheEvent() {
-        logger.info("==== size " + events.size());
-        logger.info("==== " + events);
         return new ResponseEntity<>(this.events, HttpStatus.OK) ;
     }
 }

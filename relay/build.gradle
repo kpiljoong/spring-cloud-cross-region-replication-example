@@ -18,13 +18,12 @@ plugins {
 
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'com.palantir.docker'
 
 group 'com.piljoong.cacheflow'
 version '1.0-SNAPSHOT'
 
 bootJar {
-    baseName = 'cacheflow-relay-docker'
+    baseName = 'cacheflow-relay'
     version = '0.1.0'
 }
 
@@ -42,11 +41,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.kafka:spring-kafka'
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.kafka:spring-kafka-test'
-
     compile 'org.springframework.cloud:spring-cloud-stream'
     compile 'org.springframework.cloud:spring-cloud-stream-binder-kafka'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

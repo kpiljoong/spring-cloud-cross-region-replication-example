@@ -16,7 +16,6 @@ import java.io.IOException;
 
 @Configuration
 @EnableConfigurationProperties(XMemcachedProperties.class)
-//@ConditionalOnProperty(prefix = "memcached",name = "enable",havingValue = "true")
 public class XmemcachedAutoConfiguration {
 
     @Autowired
