@@ -1,3 +1,28 @@
+# IDE-specific
+.idea
+.idea/
+.idea_modules/
+
+dist
+target
+out
+bin
+
+.project
+.classpath
+.settings
+
+*.iws
+*.iml
+.DS_Store
+
+# gradle
+.gradle
+build
+repo
+
+local.properties
+
 # Compiled class file
 *.class
 
