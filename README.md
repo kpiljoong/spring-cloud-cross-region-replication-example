@@ -20,7 +20,7 @@ https://medium.com/netflix-techblog/evolution-of-application-data-caching-from-r
 
 ## Demo architecture diagram 
 
-![Diagram](https://github.com/younjinjeong/spring-cloud-cross-region-replication-example/blob/master/images/diagram.png) 
+![Diagram](https://github.com/kpiljoong/spring-cloud-cross-region-replication-example/wiki/images/diagram.png) 
 
 
 
